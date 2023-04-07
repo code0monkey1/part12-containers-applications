@@ -1,0 +1,57 @@
+Script started on Fri Apr  7 19:00:53 2023
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[7mdocker container ru[7mn[7m -it ubuntu bash[27m[K[A[14C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mun[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?1l>[?2004l
+]2;docker container run -it ubuntu bash]1;dockerUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K2ab09b027e7f: Pulling fs layer [1B[1A[2K2ab09b027e7f: Downloading  310.6kB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading    929kB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  1.855MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  3.083MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  6.167MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  6.789MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  8.649MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading   8.96MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  11.73MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  13.91MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  17.63MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading   20.4MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  21.65MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  23.19MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  24.74MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  25.98MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  27.53MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  28.45MB/29.53MB[1B[1A[2K2ab09b027e7f: Verifying Checksum [1B[1A[2K2ab09b027e7f: Download complete [1B[1A[2K2ab09b027e7f: Extracting  327.7kB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  3.277MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  6.554MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting   8.52MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  11.14MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  13.43MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  16.38MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  20.64MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  23.59MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting   24.9MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  25.56MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  25.89MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  26.54MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  28.18MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  29.16MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  29.53MB/29.53MB[1B[1A[2K2ab09b027e7f: Pull complete [1BDigest: sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@e2e30965ee96: /root@e2e30965ee96:/# [K]0;root@e2e30965ee96: /root@e2e30965ee96:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34metc[0m   [01;36mlib32[0m   [01;34mmedia[0m  [01;34mproc[0m  [01;36msbin[0m  [30;42mtmp[0m
+[01;34mboot[0m  [01;34mhome[0m  [01;36mlib64[0m   [01;34mmnt[0m    [01;34mroot[0m  [01;34msrv[0m   [01;34musr[0m
+[01;34mdev[0m   [01;36mlib[0m   [01;36mlibx32[0m  [01;34mopt[0m    [01;34mrun[0m   [01;34msys[0m   [01;34mvar[0m
+[?2004h]0;root@e2e30965ee96: /root@e2e30965ee96:/# mkdir usr/src/app
+[?2004l[?2004h]0;root@e2e30965ee96: /root@e2e30965ee96:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34metc[0m   [01;36mlib32[0m   [01;34mmedia[0m  [01;34mproc[0m  [01;36msbin[0m  [30;42mtmp[0m
+[01;34mboot[0m  [01;34mhome[0m  [01;36mlib64[0m   [01;34mmnt[0m    [01;34mroot[0m  [01;34msrv[0m   [01;34musr[0m
+[01;34mdev[0m   [01;36mlib[0m   [01;36mlibx32[0m  [01;34mopt[0m    [01;34mrun[0m   [01;34msys[0m   [01;34mvar[0m
+[?2004h]0;root@e2e30965ee96: /root@e2e30965ee96:/# cd usr
+[?2004l[?2004h]0;root@e2e30965ee96: /usrroot@e2e30965ee96:/usr# ls
+[?2004l[0m[01;34mbin[0m    [01;34minclude[0m  [01;34mlib32[0m  [01;34mlibexec[0m  [01;34mlocal[0m  [01;34mshare[0m
+[01;34mgames[0m  [01;34mlib[0m      [01;34mlib64[0m  [01;34mlibx32[0m   [01;34msbin[0m   [01;34msrc[0m
+[?2004h]0;root@e2e30965ee96: /usrroot@e2e30965ee96:/usr# cd src
+[?2004l[?2004h]0;root@e2e30965ee96: /usr/srcroot@e2e30965ee96:/usr/src# ls
+[?2004l[0m[01;34mapp[0m
+[?2004h]0;root@e2e30965ee96: /usr/srcroot@e2e30965ee96:/usr/src# cd app      mkdir ./  ./a         touch ./app/index.js
+[?2004l[?2004h]0;root@e2e30965ee96: /usr/srcroot@e2e30965ee96:/usr/src# cd app
+[?2004l[?2004h]0;root@e2e30965ee96: /usr/src/approot@e2e30965ee96:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@e2e30965ee96: /usr/src/approot@e2e30965ee96:/usr/src/app# es xit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[7mdocker container ru[7mn[7m --rm ubuntu ls[27m[K[A[15C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mun[27m [27m-[27m-[27mr[27mm[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27ml[27ms[?1l>[?2004l
+]2;docker container run --rm ubuntu ls]1;dockerbin
+boot
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker container run --rm ubuntu ls[K[13Dit ubuntu bash[?1l>[?2004l
+]2;docker container run -it ubuntu bash]1;docker[?2004h]0;root@0745d981153a: /root@0745d981153a:/# [K]0;root@0745d981153a: /root@0745d981153a:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker container run -it ubuntu bash[K[1C0 0 --rm      ls[1C ubuntu bash ls[15D- ubuntu bash ls[15Dr ubuntu bash ls[15Dm ubuntu bash ls[15D[1C ubuntu bash ls[15D-rm  ubuntu bash ls[18D[?1l>[?2004l
+]2;docker container run -it --rm ubuntu bash ls]1;docker/usr/bin/ls: /usr/bin/ls: cannot execute binary file
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;31m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add.   . && git co [Kmmmit -'m  m 'added anse wers' && git pu
