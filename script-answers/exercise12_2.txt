@@ -54,4 +54,18 @@ var
 [?2004lexit
 [1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker container run -it ubuntu bash[K[1C0 0 --rm      ls[1C ubuntu bash ls[15D- ubuntu bash ls[15Dr ubuntu bash ls[15Dm ubuntu bash ls[15D[1C ubuntu bash ls[15D-rm  ubuntu bash ls[18D[?1l>[?2004l
 ]2;docker container run -it --rm ubuntu bash ls]1;docker/usr/bin/ls: /usr/bin/ls: cannot execute binary file
-[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;31m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add.   . && git co [Kmmmit -'m  m 'added anse wers' && git pu
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;31m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add.   . && git co [Kmmmit -'m  m 'added anse wers' && git push [?1l>[?2004l
+]2;git add . && git commit -m 'added answers' && git push]1;git[main f15f41b] added answers
+ 2 files changed, 57 insertions(+), 11 deletions(-)
+ create mode 100644 script-answers/exercise12_2.txt
+ delete mode 100644 script-answers/typescript
+Enumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.79 KiB | 1.79 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/code0monkey1/part12-containers-applications.git
+   8fc368e..f15f41b  main -> main
+[1m[7m%[27m[1m[0m                                                  ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36mscript-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h
