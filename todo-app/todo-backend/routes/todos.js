@@ -71,7 +71,7 @@ singleRouter.put('/', async (req, res) => {
       return req.send("No todo found with given id")
      }
 
-    const result=await Todo.findByIdAndUpdate(req.params.id,req.body,{new:true})
+    const result=await Todo.updateOne({"_id":req.params.id},req.body,{new:true})
 
     res.json(result).status(201)
    
