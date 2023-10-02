@@ -1,5 +1,6 @@
 const express = require('express');
-const { Todo } = require('../mongo')
+const { Todo } = require('../mongo');
+const { update } = require('../mongo/models/Todo');
 const router = express.Router();
 
 /* GET todos listing. */
@@ -71,13 +72,17 @@ singleRouter.put('/', async (req, res) => {
       return req.send("No todo found with given id")
      }
 
-     console.log("Todo found",JSON.stringify(req.todo,null,2))
+   
+try {
+  const updatedTodo = await Todo.findByIdAndUpdate(req.params.id, { title: 'New Title' }, { new: true });
+  
+  console.log(updatedTodo);
 
-    const result=await Todo.findByIdAndUpdate(req.params.id,req.body,{new:true})
+  res.json(updatedTodo).status(200)
 
-    console.log("The result is ",JSON.stringify(result,null,2))
-
-    res.json(result).status(201)
+} catch (err) {
+  console.error(err);
+}
    
 })
 
