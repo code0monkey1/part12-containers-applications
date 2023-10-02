@@ -73,7 +73,7 @@ singleRouter.put('/', async (req, res) => {
 
     const result=await Todo.findByIdAndUpdate(req.params.id,req.body,{new:true})
 
-    req.json(result).status(201)
+    res.json(result).status(201)
    
 })
 
