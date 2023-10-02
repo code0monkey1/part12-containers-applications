@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: express-server
+    image: node:16
     build: .
     ports:
       - 3000:3000
-      
