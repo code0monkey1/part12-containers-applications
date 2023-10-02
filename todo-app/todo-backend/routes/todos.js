@@ -1,11 +1,17 @@
 const express = require('express');
 const { Todo } = require('../mongo')
 const router = express.Router();
-const mongoose = require('mongoose')
+
 /* GET todos listing. */
-router.get('/', async (_, res) => {
-  const todos = await Todo.find({})
-  res.send(todos);
+router.get('/', async (_, res,next) => {
+  try{
+   console.log("Get todos")
+    const todos = await Todo.find({})
+    console.log("The todos are ",JSON.stringify(todos,null,2))
+    res.json(todos);
+  }catch(e){
+    next(e)
+  }
 });
 
 /* POST todo to listing. */
