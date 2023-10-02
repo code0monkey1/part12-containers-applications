@@ -74,7 +74,7 @@ singleRouter.put('/', async (req, res) => {
 
    
 try {
-  const updatedTodo = await Todo.findByIdAndUpdate(req.todo._id, { title: 'New Title' }, { new: true });
+  const updatedTodo = await Todo.findByIdAndUpdate(req.todo._id, req.body, { new: true });
   
   console.log("Updated Todo",JSON.stringify(updatedTodo,null,2));
 
