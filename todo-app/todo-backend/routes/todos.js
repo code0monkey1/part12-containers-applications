@@ -29,20 +29,19 @@ const findByIdMiddleware = async (req, res, next) => {
   
   try{
 
-    console.log("The params id is :" ,req.params.id)
+     console.log("The params id is :" ,req.params.id)
   
      const todo=await Todo.findById(req.params.id)
 
      console.log('Found todo',JSON.stringify(todo,null,2))
-
+      
+     req.todo=todo;
      
-  
      if(!req.todo) return res.sendStatus(404)
   }
   catch(e){
-    console.error(e.message)
+    console.error(e)
     next(e)
-
   }
 
 
