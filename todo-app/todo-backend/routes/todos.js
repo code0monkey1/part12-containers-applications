@@ -57,14 +57,21 @@ singleRouter.delete('/', async (req, res) => {
 /* GET todo. */       
 singleRouter.get('/', async (req, res) => {
 
+     if(!req.todo){
+      return req.send("No todo found with given id")
+     }
        res.json(req.todo)
 
 });
 
 /* PUT todo. */
 singleRouter.put('/', async (req, res) => {
-  res.sendStatus(405); // Implement this
-});
+   
+     if(!req.todo){
+      return req.send("No todo found with given id")
+     }
+
+    const result=await Todo.findByIdAndUpdate(req.params.id,req.body,{new:true})
 
 router.use('/:id', findByIdMiddleware, singleRouter)
 
