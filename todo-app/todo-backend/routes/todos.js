@@ -31,7 +31,11 @@ const findByIdMiddleware = async (req, res, next) => {
 
     console.log("The params id is :" ,req.params.id)
   
-     req.todo=await Todo.findById(req.params.id)
+     const todo=await Todo.findById(req.params.id)
+
+     console.log('Found todo',JSON.stringify(todo,null,2))
+
+     
   
      if(!req.todo) return res.sendStatus(404)
   }
