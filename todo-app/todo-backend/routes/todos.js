@@ -20,6 +20,17 @@ router.post('/', async (req, res) => {
 const singleRouter = express.Router();
 
 const findByIdMiddleware = async (req, res, next) => {
+
+   
+try {
+  const objectId = mongoose.Types.ObjectId(id);
+  const todo = await Todo.findById(objectId);
+  console.log(todo);
+} catch (err) {
+  console.error(err);
+}
+
+
   const { id } = req.params
   req.todo = await Todo.findById(id)
   if (!req.todo) return res.sendStatus(404)
@@ -36,7 +47,7 @@ singleRouter.delete('/', async (req, res) => {
 /* GET todo. */
 singleRouter.get('/', async (req, res) => {
   res.json(res.todo).status(200)
-  
+
 });
 
 /* PUT todo. */
