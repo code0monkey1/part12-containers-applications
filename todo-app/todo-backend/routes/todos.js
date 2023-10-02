@@ -20,11 +20,11 @@ router.post('/', async (req, res) => {
 const singleRouter = express.Router();
 
 const findByIdMiddleware = async (req, res, next) => {
+    
+  console.log("The params id is :" ,req.params.id)
 
-  
-  const objectId = mongoose.Types.ObjectId(req.params.id);
-  const todo = await Todo.findById(objectId);
-   req.todo=todo
+   req.todo=await Todo.findById(req.params.id)
+
    if(!req.todo) return res.sendStatus(404)
 
   next()
