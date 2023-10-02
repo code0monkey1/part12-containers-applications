@@ -37,7 +37,6 @@ const findByIdMiddleware = async (req, res, next) => {
       
      req.todo=todo;
      
-     res.json(req.todo)
   }
   catch(e){
     console.error(e)
@@ -45,6 +44,7 @@ const findByIdMiddleware = async (req, res, next) => {
   }
 
 
+  next()
 }
 
 
@@ -57,7 +57,7 @@ singleRouter.delete('/', async (req, res) => {
 /* GET todo. */       
 singleRouter.get('/', async (req, res) => {
 
-  res.json(req.todo).status(200)
+       res.json(req.todo)
 
 });
 
