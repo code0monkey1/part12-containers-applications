@@ -51,9 +51,10 @@ singleRouter.delete('/', async (req, res) => {
   res.sendStatus(200);
 });
 
-/* GET todo. */
+/* GET todo. */       
 singleRouter.get('/', async (req, res) => {
-  res.json(res.todo).status(200)
+
+  res.json(req.todo).status(200)
 
 });
 
