@@ -37,7 +37,7 @@ const findByIdMiddleware = async (req, res, next) => {
       
      req.todo=todo;
      
-     if(!req.todo) return res.sendStatus(404)
+     res.json(req.todo)
   }
   catch(e){
     console.error(e)
