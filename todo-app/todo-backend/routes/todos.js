@@ -36,8 +36,10 @@ router.post('/', async (req, res,next) => {
    console.log("stats are ",JSON.stringify(stats,null,2))
 
       if(stats){
-         const result = JSON.parse(stats)
-   console.log("The result is ",result)
+         
+        const result = JSON.parse(stats)
+
+        console.log("The result is ",result)
           await  setAsync('stats',JSON.stringify({
               "added_todos": stats.added_todos+1
                }))
@@ -46,7 +48,7 @@ router.post('/', async (req, res,next) => {
            
   
       await setAsync('stats',JSON.stringify({
-            "added_todos":result.added_todos+1
+            "added_todos":0
            }))
 
   }
