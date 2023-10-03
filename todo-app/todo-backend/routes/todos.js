@@ -31,7 +31,7 @@ router.post('/', async (req, res,next) => {
   })
 
   //redis
-   const stats= await getAsync('stats')
+   const stats= await JSON.parse( getAsync('stats'))
 
    console.log("stats are ",JSON.stringify(stats,null,2))
 
