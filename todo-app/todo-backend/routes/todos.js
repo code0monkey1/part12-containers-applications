@@ -19,8 +19,9 @@ router.get('/', async (_, res,next) => {
 });
 
 /* POST todo to listing. */
+/* POST todo to listing. */
 router.post('/', async (req, res,next) => {
- 
+
   try{
    console.log("Post todos")
 
@@ -28,25 +29,21 @@ router.post('/', async (req, res,next) => {
     text: req.body.text,
     done: false
   })
-  
+
   //redis
    const stats= await getAsync('stats')
 
    console.log("stats are ",JSON.stringify(stats,null,2))
 
       if(stats){
-        await setAsync('stats',
-                {
-                    "added_todos": stats.added_todos+1
-                } 
-               )
+          await  setAsync('stats',JSON.stringify({
+              "added_todos": stats.added_todos+1
+               }))
       }
       else{
-      await setAsync('stats',
-                {
-                    "added_todos": 0
-                } 
-               )
+      await setAsync('stats',JSON.stringify({
+            "added_todos": 0
+           }))
 
   }
 
