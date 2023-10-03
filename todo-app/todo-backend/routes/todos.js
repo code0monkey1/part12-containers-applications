@@ -17,7 +17,17 @@ router.get('/', async (_, res,next) => {
     next(e)
   }
 });
+router.get('/statistics',async(req,res)=>{
 
+   const stats = getAsync('stats')
+
+   if(stats){
+    res.json(stats)
+   }
+   else{
+    res.send("no new todos")
+   }
+})
 /* POST todo to listing. */
 router.post('/', async (req, res) => {
 
