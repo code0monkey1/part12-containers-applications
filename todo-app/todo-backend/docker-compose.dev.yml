@@ -17,4 +17,4 @@ services:
       ports:
         - 3003:6379
       volumes: 
-      - ./redis
+      - /redis
