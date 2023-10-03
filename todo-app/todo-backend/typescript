@@ -62,4 +62,14 @@ switched to db the_database
     done: [33mfalse[39m
   }
 ]
-[1G[0Jthe_database> [15Gtodos[1G[0Jthe_database> todo[19G[1G[0Jthe_database> tod[18G[1G[0Jthe_database> to[17G[1G[0Jthe_database> t[16G[1G[0Jthe_database> [15Gdb.todos.insertOne({})[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1D[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne( {[44m}[49m)[35G
+[1G[0Jthe_database> [15Gtodos[1G[0Jthe_database> todo[19G[1G[0Jthe_database> tod[18G[1G[0Jthe_database> to[17G[1G[0Jthe_database> t[16G[1G[0Jthe_database> [15Gdb.todos.insertOne({})[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1D[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne( {[44m}[49m)[35G[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m,[33mdone[39m:[33mfalse[39m})[35G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("651be7f08ae1a40fbb007b4a")
+}
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@fadcc0c96a45:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Oct  3 15:38:05 2023
