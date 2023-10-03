@@ -21,6 +21,7 @@ router.get('/', async (_, res,next) => {
 /* POST todo to listing. */
 router.post('/', async (req, res) => {
 
+   console.log("Post todos")
 
   const todo = await Todo.create({
     text: req.body.text,
@@ -29,7 +30,9 @@ router.post('/', async (req, res) => {
   
   //redis
    const stats= await getAsync('stats')
-   console.log("stats are ",stats)
+   
+   console.log("stats are ",JSON.stringify(stats,null,2))
+
       if(stats){
           await  setAsync({
               'stats':{
