@@ -2,6 +2,7 @@ const redis = require('redis')
 const { promisify } = require('util')
 const { REDIS_URL } = require('../util/config')
 
+console.log("Redis url is : ",REDIS_URL)
 let getAsync
 let setAsync
 
