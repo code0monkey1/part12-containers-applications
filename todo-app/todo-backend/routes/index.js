@@ -17,4 +17,19 @@ router.get('/', async (req, res) => {
 
 
 
+router.get('/statistics',async(req,res)=>{
+
+   const stats = await getAsync('stats')
+
+   if(stats){
+    res.json(stats)
+   }
+   else{
+    res.send("no new todos")
+   }
+
+})
+
+
+
 module.exports = router;
