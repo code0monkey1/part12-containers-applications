@@ -42,11 +42,9 @@ router.post('/', async (req, res,next) => {
           })
       }
       else{
-      await setAsync({
-            'stats':{
-        "added_todos": 0
-           }
-    })
+      await setAsync('stats',{
+          "added_todos": 0
+               } )
 
   }
 
