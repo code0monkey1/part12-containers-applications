@@ -40,7 +40,8 @@ router.post('/', async (req, res) => {
   })
   
   //redis
-      const stats=getAsync('stats')
+   const stats=getAsync('stats')
+   console.log("stats are ",stats)
       if(stats){
             setAsync({
               'stats':{
