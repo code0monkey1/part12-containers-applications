@@ -4,8 +4,6 @@ const { update } = require('../mongo/models/Todo');
 const { setAsync, getAsync } = require('../redis');
 const router = express.Router();
 
-
-
 /* GET todos listing. */
 router.get('/', async (_, res,next) => {
   try{
@@ -40,16 +38,16 @@ router.post('/', async (req, res,next) => {
         const result = JSON.parse(stats)
 
         console.log("The result is ",result)
-        
+
           await  setAsync('stats',JSON.stringify({
               "added_todos": result.added_todos+1
                }))
       }
       else{
-           
+        
   
       await setAsync('stats',JSON.stringify({
-            "added_todos":0
+            "added_todos":1
            }))
 
   }

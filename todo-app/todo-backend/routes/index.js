@@ -22,7 +22,7 @@ router.get('/statistics',async(req,res)=>{
    const stats = await redis.getAsync('stats')
 
    if(stats){
-    res.json(stats)
+    res.json(JSON.parse(stats))
    }
    else{
     res.send("no new todos")
