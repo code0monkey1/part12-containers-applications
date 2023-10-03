@@ -40,8 +40,9 @@ router.post('/', async (req, res,next) => {
         const result = JSON.parse(stats)
 
         console.log("The result is ",result)
+        
           await  setAsync('stats',JSON.stringify({
-              "added_todos": stats.added_todos+1
+              "added_todos": result.added_todos+1
                }))
       }
       else{
