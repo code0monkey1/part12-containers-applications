@@ -20,9 +20,14 @@ router.get('/', async (req, res) => {
 router.get('/statistics',async(req,res)=>{
 
    const stats = await redis.getAsync('stats')
+
    console.log("The stats are",stats)
+   
    if(stats){
-    res.json(stats)
+
+    res.send( {
+      "added_todos":stats
+     })
    }
    else{
     res.send("no new todos")
