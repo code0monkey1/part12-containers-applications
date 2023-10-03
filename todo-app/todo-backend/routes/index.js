@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 
 router.get('/statistics',async(req,res)=>{
 
-   const stats = await getAsync('stats')
+   const stats = await redis.getAsync('stats')
 
    if(stats){
     res.json(stats)
