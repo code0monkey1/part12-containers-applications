@@ -1,28 +1,22 @@
 Script started on Tue Oct  3 15:36:09 2023
-[oh-my-zsh] Insecure completion-dependent directories detected:
-lrwxr-xr-x@ 1 chiranjeevthomas  admin  39 Oct 31  2020 /usr/local/share/zsh/site-functions/_brew -> ../../../Homebrew/completions/zsh/_brew
-lrwxr-xr-x@ 1 chiranjeevthomas  admin  88 Nov 19  2022 /usr/local/share/zsh/site-functions/_brew_services -> ../../../Homebrew/Library/Taps/homebrew/homebrew-services/completions/zsh/_brew_services
 
-[oh-my-zsh] For safety, we will not load completions from these directories until
-[oh-my-zsh] you fix their permissions and ownership and restart zsh.
-[oh-my-zsh] See the above list for directories with group or other writability.
+ 
+]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\
+[0m[27m[24m[J[01;31m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscriptls    rm -r typescript[16Dexit            [12Dbashcat typescript[14Dls            [12Dexitscriptdocker exec -it todo-backend-mongo-1 bash[K[A[30Ccompose -f [2Ccker-compose.dev.yml up -d[?1l>[?2004l
 
-[oh-my-zsh] To fix your permissions you can do so by disabling
-[oh-my-zsh] the write permission of "group" and "others" and making sure that the
-[oh-my-zsh] owner of these directories is either root or your current user.
-[oh-my-zsh] The following command may help:
-[oh-my-zsh]     compaudit | xargs chmod g-w,o-w
-
-[oh-my-zsh] If the above didn't help or you want to skip the verification of
-[oh-my-zsh] insecure directories you can set the variable ZSH_DISABLE_COMPFIX to
-[oh-my-zsh] "true" before oh-my-zsh is sourced in your zshrc file.
-
-[1m[7m%[27m[1m[0m                                                                ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J[01;31m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscriptls    rm -r typescript[16Dexit            [12Dbashcat typescript[14Dls            [12Dexitscriptdocker exec -it todo-backend-mongo-1 bash[K[A[30Ccompose -f [2Ccker-compose.dev.yml up -d[?1l>[?2004l
 ]2;docker compose -f docker-compose.dev.yml up -d]1;docker[1A[1B[0G[?25l[+] Running 1/0
  [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                 [34m0.0s [0m
-[?25h[1m[7m%[27m[1m[0m                                                                ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker compose -f docker-compose.dev.yml up -d[K[A[18Cscript[K[1B[K[A[35Cdocker compose -f docker-compose.dev.yml up -d[K[A[18C[K[1B[K[A[29Cdocker compose -f docker-compose.dev.yml up -d[K[A[18Cscript[K[1B[K[A[35Cls    rm -r typescript[16Dexit            [12Dbashcat typescript[14Dls            [12Dexitscriptdocker exec -it todo-backend-mongo-1 bash[K[?1l>[?2004l
+[?25h[1m[7m%[27m[1m[0m                                                               
+ 
+]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\
+[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker compose -f docker-compose.dev.yml up -d[K[A[18Cscript[K[1B
+[K[A[35Cdocker compose -f docker-compose.dev.yml up -d[K[A[18C[K[1B
+[K[A[29Cdocker compose -f docker-compose.dev.yml up -d[K[A[18Cscript[K[1B
+[K[A[35Cls    rm -r typescript[16Dexit            [12Dbashcat typescript[14Dls            [12Dexitscriptdocker exec -it todo-backend-mongo-1 bash[K[?1l>[?2004l
+
 ]2;docker exec -it todo-backend-mongo-1 bash]1;docker[?2004hroot@fadcc0c96a45:/# mongosh -u root -p s example
-[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	651be7c08ae1a40fbb007b49
+[?2004l
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	651be7c08ae1a40fbb007b49
 Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.10.6[0m
 Using MongoDB:		7.0.1
 [1m[33mUsing Mongosh[0m:		1.10.6
@@ -35,16 +29,20 @@ For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
    2023-10-03T09:06:32.432+00:00: vm.max_map_count is too low
 [1m[33m------[0m
 
-[1G[0Jtest> [7Gshow dbs
+[1G[0Jtest> [7Gshow dbs
+
 [1madmin[0m         100.00 KiB
 [1mconfig[0m         60.00 KiB
 [1mlocal[0m          72.00 KiB
 [1mthe_database[0m   72.00 KiB
-[1G[0Jtest> [7Gue[1G[0Jtest> u[8Gse the_database
+[1G[0Jtest> [7Gue[1G[0Jtest> u[8Gse the_database
+
 switched to db the_database
-[1G[0Jthe_database> [15Gshow collections
+[1G[0Jthe_database> [15Gshow collections
+
 [1mtodos[0m
-[1G[0Jthe_database> [15Gdb.todos.find()
+[1G[0Jthe_database> [15Gdb.todos.find()
+
 [
   {
     _id: ObjectId("651bd69a2223d3c62b45cddc"),
@@ -62,14 +60,21 @@ switched to db the_database
     done: [33mfalse[39m
   }
 ]
-[1G[0Jthe_database> [15Gtodos[1G[0Jthe_database> todo[19G[1G[0Jthe_database> tod[18G[1G[0Jthe_database> to[17G[1G[0Jthe_database> t[16G[1G[0Jthe_database> [15Gdb.todos.insertOne({})[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1D[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne( {[44m}[49m)[35G[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m,[33mdone[39m:[33mfalse[39m})[35G
+[1G[0Jthe_database> [15Gtodos[1G[0Jthe_database> todo[19G[1G[0Jthe_database> tod[18G[1G[0Jthe_database> to[17G[1G[0Jthe_database> t[16G[1G[0Jthe_database> [15Gdb.todos.insertOne({})[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1D[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne( {[44m}[49m)[35G[1G[0Jthe_database> db.todos.insertOne({[44m}[49m)[34G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m,[33mdone[39m:[33mfalse[39m})[35G
+
 {
   acknowledged: [33mtrue[39m,
   insertedId: ObjectId("651be7f08ae1a40fbb007b4a")
 }
-[1G[0Jthe_database> [15Gexit
+[1G[0Jthe_database> [15Gexit
+
 [?2004hroot@fadcc0c96a45:/# exit
-[?2004lexit
-[1m[7m%[27m[1m[0m                                                                ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004heexit[?1l>[?2004l
+[?2004l
+exit
+[1m[7m%[27m[1m[0m                                                               
+ 
+]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\
+[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004heexit[?1l>[?2004l
+
 ]2;exit]1;exit
 Script done on Tue Oct  3 15:38:05 2023
