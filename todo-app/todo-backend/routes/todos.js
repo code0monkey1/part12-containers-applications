@@ -32,7 +32,7 @@ router.post('/', async (req, res,next) => {
    const stats= await getAsync('stats')
 
       if(stats)
-          await  setAsync('stats',stats+1)
+          await  setAsync('stats', parseInt(stats)+1)
       else
         await setAsync('stats',1)
 
