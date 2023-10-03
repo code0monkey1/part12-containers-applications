@@ -31,26 +31,11 @@ router.post('/', async (req, res,next) => {
   //redis
    const stats= await getAsync('stats')
 
-   console.log("stats are ",JSON.stringify(stats,null,2))
+      if(stats)
+          await  setAsync('stats',stats+1)
+      else
+        await setAsync('stats',1)
 
-      if(stats){
-         
-        const result = JSON.parse(stats)
-
-        console.log("The result is ",result)
-
-          await  setAsync('stats',JSON.stringify({
-              "added_todos": result.added_todos+1
-               }))
-      }
-      else{
-        
-  
-      await setAsync('stats',JSON.stringify({
-            "added_todos":1
-           }))
-
-  }
 
   res.send(todo);
 }catch(e){
