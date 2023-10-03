@@ -1,0 +1,23 @@
+Script started on Tue Oct  3 15:36:09 2023
+[oh-my-zsh] Insecure completion-dependent directories detected:
+lrwxr-xr-x@ 1 chiranjeevthomas  admin  39 Oct 31  2020 /usr/local/share/zsh/site-functions/_brew -> ../../../Homebrew/completions/zsh/_brew
+lrwxr-xr-x@ 1 chiranjeevthomas  admin  88 Nov 19  2022 /usr/local/share/zsh/site-functions/_brew_services -> ../../../Homebrew/Library/Taps/homebrew/homebrew-services/completions/zsh/_brew_services
+
+[oh-my-zsh] For safety, we will not load completions from these directories until
+[oh-my-zsh] you fix their permissions and ownership and restart zsh.
+[oh-my-zsh] See the above list for directories with group or other writability.
+
+[oh-my-zsh] To fix your permissions you can do so by disabling
+[oh-my-zsh] the write permission of "group" and "others" and making sure that the
+[oh-my-zsh] owner of these directories is either root or your current user.
+[oh-my-zsh] The following command may help:
+[oh-my-zsh]     compaudit | xargs chmod g-w,o-w
+
+[oh-my-zsh] If the above didn't help or you want to skip the verification of
+[oh-my-zsh] insecure directories you can set the variable ZSH_DISABLE_COMPFIX to
+[oh-my-zsh] "true" before oh-my-zsh is sourced in your zshrc file.
+
+[1m[7m%[27m[1m[0m                                                                ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J[01;31m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscriptls    rm -r typescript[16Dexit            [12Dbashcat typescript[14Dls            [12Dexitscriptdocker exec -it todo-backend-mongo-1 bash[K[A[30Ccompose -f [2Ccker-compose.dev.yml up -d[?1l>[?2004l
+]2;docker compose -f docker-compose.dev.yml up -d]1;docker[1A[1B[0G[?25l[+] Running 1/0
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                 [34m0.0s [0m
+[?25h[1m[7m%[27m[1m[0m                                                                ]2;chiranjeevthomas@chiranjeevs-MBP:~/Documents/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://chiranjeevs-MBP.bbrouter/Users/chiranjeevthomas/Documents/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J[01;32m➜  [36mtodo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker compose -f docker-compose.dev.yml up -d[K[A[18Cscript[K[1B[K[A[35Cdocker compose -f docker-compose.dev.yml up -d[K[A[18C[K[1B[K[A[29Cdocker compose -f docker-compose.dev.yml up -d[K[A[18Cscript[K[1B[K[A[35Cls    rm -r typescript[16Dexit            [12Dbashcat typescript[14Dls            [12Dexitscript
