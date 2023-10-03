@@ -19,8 +19,9 @@ router.get('/', async (_, res,next) => {
 });
 
 /* POST todo to listing. */
-router.post('/', async (req, res) => {
-
+router.post('/', async (req, res,next) => {
+ 
+  try{
    console.log("Post todos")
 
   const todo = await Todo.create({
@@ -30,7 +31,7 @@ router.post('/', async (req, res) => {
   
   //redis
    const stats= await getAsync('stats')
-   
+
    console.log("stats are ",JSON.stringify(stats,null,2))
 
       if(stats){
@@ -50,6 +51,10 @@ router.post('/', async (req, res) => {
   }
 
   res.send(todo);
+}catch(e){
+  console.error(e.message)
+  next(e)
+}
 });
 
 const singleRouter = express.Router();
