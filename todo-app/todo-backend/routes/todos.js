@@ -17,7 +17,8 @@ router.get('/', async (_, res,next) => {
     next(e)
   }
 });
-router.get('/statistics',async(req,res)=>{
+
+router.get('/statistics',async(req,res,next)=>{
 
    const stats = getAsync('stats')
 
@@ -27,6 +28,7 @@ router.get('/statistics',async(req,res)=>{
    else{
     res.send("no new todos")
    }
+   next()
 })
 /* POST todo to listing. */
 router.post('/', async (req, res) => {
