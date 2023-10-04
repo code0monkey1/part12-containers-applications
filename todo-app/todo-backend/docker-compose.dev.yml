@@ -2,15 +2,18 @@ version: '3.8'
 
 services:
   app:
-    image: hello-front-dev
+    image: todo-backend-dev-image
     build:
       context: .
       dockerfile: dev.Dockerfile
     volumes:
       - ./:/usr/src/app
+    environment:
+        REDIS_URL: http://redis:6379
+        MONGO_URL: http://mongo:27017
     ports:
       - 3005:3000
-    container_name: todo-backend-dev
+    container_name: todo-backend-dev-container
 
   mongo:
     image: mongo
