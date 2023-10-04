@@ -11,8 +11,7 @@ services:
     ports:
       - 3005:3000
     container_name: todo-backend-dev
-  debug-helper:
-    image: busybox
+
   mongo:
     image: mongo
     ports:
