@@ -38,5 +38,3 @@ services:
       - 6379:6379
       volumes: # Declare the volume
           - ./redis_data:/data
-  debug-helper:
-    image: busybox
