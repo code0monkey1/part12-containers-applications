@@ -1,6 +1,13 @@
 version: '3.8'
 
 services:
+  server:
+     image: todo-backend-image
+     build:
+        context: .
+        dockerfile: dev.Dockerfile
+     volumes:
+       - ./:/app
   mongo:
     image: mongo
     ports:
