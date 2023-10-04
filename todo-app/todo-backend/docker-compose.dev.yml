@@ -21,8 +21,6 @@ services:
 
   mongo:
     image: mongo
-    ports:
-     - 3456:27017
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
@@ -32,8 +30,6 @@ services:
 
   redis:
       image: redis
-      ports:
-        - 3003:6379
       command: ['redis-server', '--appendonly', 'yes'] # Overwrite the CMD
       volumes: # Declare the volume
           - ./redis_data:/data
