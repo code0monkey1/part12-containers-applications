@@ -4,7 +4,7 @@ services:
 
   app:
     image:
-      app_image
+      app_backend_image
     build:
       context: .
       dockerfile: dev.Dockerfile
