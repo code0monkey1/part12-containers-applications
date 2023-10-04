@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   app:
-    image: todo-backend-dev-image
+    image: app
     build:
       context: .
       dockerfile: dev.Dockerfile
