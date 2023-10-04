@@ -1,16 +1,18 @@
 version: '3.8'
 
 services:
-  server:
-     image: todo-backend-image
-     build:
-        context: .
-        dockerfile: dev.Dockerfile
-     volumes:
-       - ./:/app
-     env_file:
-         ./.env
-      
+  app:
+    image: hello-front-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3005:3000
+    container_name: todo-backend-dev
+  debug-helper:
+    image: busybox
   mongo:
     image: mongo
     ports:
