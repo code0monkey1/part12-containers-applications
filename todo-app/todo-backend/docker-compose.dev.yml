@@ -8,6 +8,9 @@ services:
         dockerfile: dev.Dockerfile
      volumes:
        - ./:/app
+     env_file:
+         ./.env
+      
   mongo:
     image: mongo
     ports:
