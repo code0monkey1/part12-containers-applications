@@ -11,7 +11,7 @@ services:
       - ./:/usr/src/app
     environment:
         REDIS_URL: redis://6379
-        MONGO_URL: mongodb://root:example@mongo:27017/the_database
+        MONGO_URL: mongodb://root:secret@mongo:27017/the_database
     ports:
       - 3005:3000
     container_name: todo-backend-dev-container
