@@ -15,8 +15,8 @@ services:
       - 3005:3000
     container_name: todo-backend-dev-container
     depends_on:
-      - mongo
       - redis
+      - mongo
 
   mongo:
     image: mongo
