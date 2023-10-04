@@ -3,12 +3,12 @@ version: '3.8'
 services:
 
   app:
-    image: app
+    image: todo-backend-dev-image
     build:
       context: .
       dockerfile: dev.Dockerfile
     volumes:
-      - ./:/usr/src/app
+      - ./:/app
     environment:
         REDIS_URL: redis://6379
         MONGO_URL: mongodb://root:example@mongo:27017/the_database
