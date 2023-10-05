@@ -23,8 +23,8 @@ services:
   mongo:
     image: mongo
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_USERNAME: the_username
+      MONGO_INITDB_ROOT_PASSWORD: the_password
       MONGO_INITDB_DATABASE: the_database
     ports:
       - 27017:27017
