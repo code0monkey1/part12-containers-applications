@@ -12,6 +12,18 @@ services:
   debug-helper:
     image: busybox
   
+  api:
+    image: todo-frontend-image
+    build:
+      context:  ./todo-frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./todo-frontend:/app
+    ports:
+      - 3000:3000
+    container_name: todo-frontend-container
+
+  
   nginx:
     image: nginx:1.20.1
     volumes:
