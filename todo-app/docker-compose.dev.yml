@@ -9,8 +9,11 @@ services:
     ports:
       - 3000:3000
     container_name: todo-frontend-container
+    depends_on:
+    - api
   debug-helper:
     image: busybox
+  
   
   api:
       image:
@@ -19,7 +22,7 @@ services:
         context: ./todo-backend
         dockerfile: dev.Dockerfile
       volumes:
-        - ./:/app
+        - ./todo-backend:/app
       environment:
           REDIS_URL: redis://redis:6379
           MONGO_URL: mongodb://the_username:the_password@mongo:27017/the_database
