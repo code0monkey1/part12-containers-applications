@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+
+  app:
+    image:
+      frontend-image
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_BACKEND_API=http://localhost:3001
+    container_name: frontend-container
+    depends_on:
+       - api
+  
+  api:
+    image:
+      backend-image
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+
+    volumes:
+      - ./backend:/app
+    ports:
+      - 3001:3001
+    container_name: backend-container
+ 

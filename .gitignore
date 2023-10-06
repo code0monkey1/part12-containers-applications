@@ -1,0 +1,4 @@
+.vscode
+my-app/backend/node_modules
+my-app/frontend/node_modules
+.dccache
