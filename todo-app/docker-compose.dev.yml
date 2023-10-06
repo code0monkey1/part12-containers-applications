@@ -65,3 +65,5 @@ services:
     container_name: reverse-proxy
     depends_on:
       - app # wait for the frontend container to be started
+      - api
+      
