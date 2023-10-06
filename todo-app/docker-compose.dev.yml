@@ -12,11 +12,12 @@ services:
     environment:
       - REACT_APP_BACKEND_URL=http://api:3000
     depends_on:
-    - api
+       - api
+  
   debug-helper:
     image: busybox
   
-  
+
   api:
       image:
         app_backend_image
