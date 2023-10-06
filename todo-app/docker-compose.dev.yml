@@ -10,7 +10,7 @@ services:
       - 3000:3000
     container_name: todo-frontend-container
     environment:
-      - REACT_APP_BACKEND_URL=http://api:3000/
+      - REACT_APP_BACKEND_URL=http://api:3000
     depends_on:
       - api
 
