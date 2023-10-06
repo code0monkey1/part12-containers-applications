@@ -16,7 +16,7 @@ services:
     image: todo-backed-image
     build:
       context:  ./todo-backend
-      dockerfile: Dockerfile
+      dockerfile: dev.Dockerfile
     volumes:
       - ./todo-backend:/app
     ports:
